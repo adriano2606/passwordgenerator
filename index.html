@@ -25,8 +25,24 @@
                           <h5 class="card-title"><span id="newPass"></span></h5>
                         </div>
                       </div>
-                      <label for="disabledRange" class="form-label align-self-start mb-3 fs-5">Password size: <span id="CharQuantity" class="bg-primary rounded p-1 "></span></label> 
-                        <input type="range" class="form-range" min="1" max="20" step="1" id="range">
+                      <label for="range" class="form-label align-self-start mb-3 fs-5">Password size: <span id="CharQuantity" class="bg-primary rounded p-1 "></span></label> 
+                        <input type="range" class="form-range mb-4" min="1" max="20" step="1" value="10" id="range">
+                        <div class="form-check form-switch mb-2">
+                          <input class="form-check-input" type="checkbox" role="switch" id="lowerCaseOption" checked >
+                          <label class="form-check-label" for="lowerCaseOption">Consider lower case letters</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                          <input class="form-check-input" type="checkbox" role="switch" id="upperCaseOption" checked>
+                          <label class="form-check-label" for="upperCaseOption">Consider upper case letters</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                          <input class="form-check-input" type="checkbox" role="switch" id="specialCharOption" checked >
+                          <label class="form-check-label" for="specialCharOption">Consider special characteres</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                          <input class="form-check-input" type="checkbox" role="switch" id="numberCharOption" checked >
+                          <label class="form-check-label" for="numberCharOption">Consider numbers</label>
+                        </div>
                         <button type="button" id="button" class="btn btn-primary btn-lg mt-4">
                         <i class="fa-solid fa-key white"></i>Generate Password</button>
                 </div>
