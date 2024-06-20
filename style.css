@@ -31,3 +31,19 @@
 .white{
     margin-right: 10px;
 }
+
+#boostrap-override .copyIcon, #boostrap-override .correctIcon{
+    margin-left: 1.3rem;
+}
+
+#boostrap-override .copyIcon:hover{
+    cursor: pointer;
+}
+
+#boostrap-override #copiedNotification{
+    position: relative;
+    font-size: .8rem;
+    left: .5rem;
+    bottom: 3px;
+    font-weight: 600;
+}

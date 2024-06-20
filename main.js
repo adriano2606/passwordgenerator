@@ -6,7 +6,6 @@ const range = document.getElementById('range')
 let rangeValue = range.value
 const CharQuantity = document.getElementById('CharQuantity')
 const button = document.getElementById('button')
-const newPassBox = document.getElementById('newPassBox')
 const newPassField = document.getElementById('newPass')
 const lowerCaseOption = document.getElementById('lowerCaseOption')
 const upperCaseOption = document.getElementById('upperCaseOption')
@@ -17,7 +16,10 @@ let isUpperCaseCharMandatory = 1
 let isSpecialCharMandatory = 1
 let isNumberCharMandatory = 1
 let rangeMinLength = 4
-const optionList = [lowerCaseOption, upperCaseOption, specialCaseOption, numberCharOption]
+const optionList = [lowerCaseOption,upperCaseOption,specialCaseOption,numberCharOption]
+const IconForCopy = document.getElementById('IconForCopy')
+const correctionIcon = document.getElementById('correctionIcon')
+const copiedNotification = document.getElementById('copiedNotification')
 
 function changeMandatoryStatus(index, status) {
 
@@ -163,3 +165,17 @@ optionList.forEach((element, index) => {
         setMinimiumLength()
     }
 });
+
+IconForCopy.onclick = () => {
+    navigator.clipboard.writeText(newPassField.innerText);
+    correctionIcon.classList.toggle('visually-hidden')
+    IconForCopy.classList.toggle('visually-hidden')
+    copiedNotification.classList.toggle('visually-hidden')
+
+    setTimeout(() => {
+        correctionIcon.classList.toggle('visually-hidden')
+        IconForCopy.classList.toggle('visually-hidden')
+        copiedNotification.classList.toggle('visually-hidden')
+    }, '500')
+
+}
