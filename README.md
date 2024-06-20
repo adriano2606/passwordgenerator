@@ -36,3 +36,9 @@ Additionally, if the user needs a temporary password, they no longer need to use
 - Automatic password change when changing options or adjusting the desired password length
 
 - Icon to copy the generated password
+
+## Mobile screen:
+![IMG2](https://github.com/adriano2606/passwordgenerator/assets/96502994/c0805b27-d7d8-429d-b284-c3b9485781e1)
+
+
+
